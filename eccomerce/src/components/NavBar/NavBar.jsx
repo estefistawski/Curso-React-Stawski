@@ -2,11 +2,11 @@ import CartWidget from "../CartWidget/CartWidget";
 const NavBar =()=>{
     return(
         <nav>
-        <h3>ECCOMERCE</h3>
+        <h3 className="eccomerce">ECCOMERCE</h3>
         <div>
-            <button>Remeras</button>
-            <button>Pantalones</button>
-            <button>Calzado</button>
+        <button type="button" className="btn btn-outline-dark">Remeras</button>
+        <button type="button" className="btn btn-outline-dark">Pantalones</button>
+        <button type="button" className="btn btn-outline-dark">Calzado</button>
             </div>
             <CartWidget />
         </nav>
