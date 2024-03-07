@@ -43,3 +43,11 @@ export const getProductById = (productoId)=>{
         },1000);
     });
 }
+
+export const getProductByCategory = (productCategory)=>{
+    return new Promise(resolve=>{
+        setTimeout(()=>{
+            resolve(productos.find((prod)=>prod.category===productCategory));
+        },1000);
+    });
+}
