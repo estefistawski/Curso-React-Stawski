@@ -14,3 +14,8 @@
   font-size: 30px;
   font-weight: bold;
 }
+.Controles{
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}

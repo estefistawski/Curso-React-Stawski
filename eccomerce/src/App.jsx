@@ -8,8 +8,9 @@ function App() {
     <>
      <NavBar />
      <ItemListContainer greeting={`Bienvenidos`} />
-    </>
-  )
+     
+     </>
+  );
 }
 
 export default App
