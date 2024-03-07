@@ -47,7 +47,7 @@ export const getProductById = (productoId)=>{
 export const getProductByCategory = (productCategory)=>{
     return new Promise(resolve=>{
         setTimeout(()=>{
-            resolve(productos.find((prod)=>prod.category===productCategory));
+            resolve(productos.filter((prod)=>prod.category===productCategory));
         },1000);
     });
 }

@@ -11,9 +11,9 @@ const NavBar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <Link to={"/category/celular"}>Celulares</Link>
-                        <Link to={"/category/tablet"}>Tablets</Link>
-                        <Link to={"/category/Computers"}>Computadoras</Link>
+                        <Link to={`/category/celular`}>Celulares</Link>
+                        <Link to={`/category/tablet`}>Tablets</Link>
+                        <Link to={`/category/Computers`}>Computadoras</Link>
                     </div>
                 </div>
             </div>
