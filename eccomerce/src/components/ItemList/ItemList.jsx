@@ -1,6 +1,7 @@
 import Items from "../Items/Items"
 
 const ItemList = ({products}) => {
+  console.log(products)
   return (
     <div>
       {

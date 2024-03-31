@@ -19,3 +19,18 @@
   display: flex;
   justify-content: center;
 }
+.cartItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.carrito{
+  padding: 30px;
+}
+#cart{
+  padding: 20px;
+}
+.sinItems{
+  padding: 50px;
+}
