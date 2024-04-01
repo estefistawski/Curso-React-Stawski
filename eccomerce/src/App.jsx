@@ -5,6 +5,8 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CartProvider } from './contexto/ContextoCarrito';
 import Cart from './components/Cart/Cart';
+import Checkout from './components/Checkout/Checkout';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 function App() {
 
@@ -23,7 +25,9 @@ function App() {
             element={<ItemListContainer greetings={"Listado de Productos Filtrados"} />}
           />
       <Route path="/detail/:productId" element={<ItemDetailContainer/>}/>
+      <Route path='/*' element={<ErrorPage/>}/>
       <Route path='/cart' element={<Cart/>} />
+      <Route path='/checkout' element={<Checkout/>} />
       
      </Routes>
      </CartProvider>

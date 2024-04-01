@@ -20,7 +20,6 @@ const ItemListContainer = ({ greeting }) => {
       const product = response.docs.map((doc)=>{
         return {id:doc.id,...doc.data()}
       })
-      console.log(product)
       setProducts(product);
       setLoading(true)
      })
@@ -31,7 +30,8 @@ const ItemListContainer = ({ greeting }) => {
     return (
         <div>
             <h1 className="titulo">{greeting}</h1>
-            {loading &&<ItemList products={products}/>}
+            {loading ?(
+            <ItemList products={products}/>): <h1>Cargando...</h1>}
            
         </div>
     )

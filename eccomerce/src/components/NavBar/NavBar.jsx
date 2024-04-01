@@ -10,10 +10,16 @@ const NavBar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div className="navbar-nav">
-                        <Link to={`/category/celular`}>Celulares</Link>
-                        <Link to={`/category/tablet`}>Tablets</Link>
-                        <Link to={`/category/Computers`}>Computadoras</Link>
+                    <div className="categorias">
+                        <div>
+                        <Link to={`/category/Celular`}>Celulares</Link>
+                        </div>
+                        <div>
+                        <Link to={`/category/Tablet`}>Tablets</Link>
+                        </div>
+                        <div>
+                        <Link to={`/category/Computer`}>Computadoras</Link>
+                        </div>
                     </div>
                 </div>
             </div>
